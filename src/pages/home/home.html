@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pagina Raíz
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Home
+
+  <button ion-button full 
+    [navPush]="elementoPage" 
+    [navParams]="{numero: 1}" > 
+      Agregar pagina
+  </button>
+
+  <button ion-button block (click)="openMenu()">
+    Acciones de Hojas
+  </button>
+
+
+  <button ion-button block color="secondary" (click)="showPrompt()">
+    Prompt
+  </button>
+
+  <button ion-button full [navPush]="AlertPage" > 
+      Alerts
+  </button>
+</ion-content>

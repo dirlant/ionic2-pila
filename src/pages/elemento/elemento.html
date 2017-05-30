@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Pagina {{ numeroPagina }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  Elemento
+<button ion-button full 
+    [navPush]="elementoPage" 
+    [navParams]="{numero: numeroPagina + 1}" > Agregar pagina
+</button>
+ <button ion-button full navPop> Eliminar pagina</button>
+ <button ion-button full 
+    [navPush]="testPage" 
+    [navParams]="{nombre: 'Test Page'}" > Pagina Test
+</button>
+</ion-content>
